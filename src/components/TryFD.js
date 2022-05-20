@@ -16,44 +16,28 @@ import "../styles/FD_Placement.css";
 
 export default function FD_Placement() {
 
-    const [values, setValues] = React.useState({
-        amount: '',
-    });
-
-    const handleChange = (prop) => (event) => {
-        setValues({ ...values, [prop]: event.target.value });
-    };
-
     const [val, setVal] = useState(0);
 
     const [accType, setAccType] = React.useState('');
 
-    // const handleChange = (event) => {
-    //     setAccType(event.target.value);
-    // };
+    const handleChange = (event) => {
+        setAccType(event.target.value);
+    };
 
-    // function MyFormHelperText() {
-    //     const { focused } = useFormControl() || {};
+    function MyFormHelperText() {
+        const { focused } = useFormControl() || {};
     
-    //     const helperText = React.useMemo(() => {
-    //     if (focused) {
-    //         return 'This field is being focused';
-    //     }
+        const helperText = React.useMemo(() => {
+        if (focused) {
+            return 'This field is being focused';
+        }
     
-    //     return 'Helper text';
-    //     }, [focused]);
+        return 'Helper text';
+        }, [focused]);
     
-    //     return <FormHelperText>{helperText}</FormHelperText>;
-    // }
-
-    //  
-
-    // const calcValue1 = (inputValue) => {
-    //     let total = 0;
-    //     total += (25/100) * parseFloat(inputValue);
-    //     return total;
-    //   }
-
+        return <FormHelperText>{helperText}</FormHelperText>;
+    }
+   
   return (
     <div className="main">
         <div className="top-main"> 
@@ -220,10 +204,10 @@ export default function FD_Placement() {
                         <FormControl>
                             <OutlinedInput 
                             id="amount"
-                            onInput="myCal()"
+                            onInput="cal()"
                             type="number"
-                            value={values}
-                            onChange={handleChange('amount')}
+                            value={accType}
+                            onChange={handleChange}
                             placeholder="0.00"
                             startAdornment={<InputAdornment position="start">RM</InputAdornment>}
                             />
@@ -246,7 +230,7 @@ export default function FD_Placement() {
                                 disabled
                                 defaultValue= "Maturity Amount"
                             />
-                            <div className="sub-profit">RM 11,275.00</div>
+                            <div className="sub-profit">2.5%</div>
                         </div>
                     </div>
             </div>

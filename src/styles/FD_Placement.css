@@ -61,6 +61,7 @@
     margin-top: 10px;
 } */
 
+/* drop-down */
 .css-1yk1gt9-MuiInputBase-root-MuiOutlinedInput-root-MuiSelect-root{
     display: flex;
     flex-direction: row;
@@ -83,11 +84,12 @@
     border-radius: 15px !important;
     background-color: #FFFFFF;
     height: 38px;
-    width: 720px;
+    width: 678px;
     margin-top: 10px;
 }
 
-.css-9ddj71-MuiInputBase-root-MuiOutlinedInput-root {
+/* amount */
+/* .css-9ddj71-MuiInputBase-root-MuiOutlinedInput-root {
     font-family: "Roboto","Helvetica","Arial",sans-serif;
     font-weight: 400;
     font-size: 1rem;
@@ -106,14 +108,133 @@
     -ms-flex-align: center;
     align-items: center;
     position: relative;
-    height: 38px;
-    width: 720px;
-    margin-top: 10px;
-    border-radius: 23px !important;
+    width: 678px !important;
+    height: 38px !important;
+    margin-top: 8px;
+    border-radius: 15px !important;
+    background-color: #FFFFFF;
+} */
+
+.css-1q6at85-MuiInputBase-root-MuiOutlinedInput-root{
+    font-family: "Roboto","Helvetica","Arial",sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.4375em;
+    letter-spacing: 0.00938em;
+    color: rgba(0, 0, 0, 0.87);
+    box-sizing: border-box;
+    position: relative;
+    cursor: text;
+    display: -webkit-inline-box;
+    display: -webkit-inline-flex;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    position: relative;
+    border-radius: 15px !important;
+    width: 678px !important;
+    height: 38px !important;
+    margin-top: 8px;
+    padding-left: 14px;
     background-color: #FFFFFF;
 }
 
-.css-10botns-MuiInputBase-input-MuiFilledInput-input{
+/* calculation */
+.css-9ddj71-MuiInputBase-root-MuiOutlinedInput-root {
+    font-family: "Rubik";
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 52px;
+    letter-spacing: 0.00938em;
+    color: #6F7FAF;
+    position: relative;
+    cursor: text;
+    display: -webkit-inline-box;
+    display: -webkit-inline-flex;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    position: relative;
+    width: 201px;
+    height: 41px;
+    margin-top: 25px;
+    border-radius: 0px !important;
+    padding: 0px;
+    color: #6F7FAF !important;
+    background-color: #FFFFFF;
+}
+.css-1t8l2tu-MuiInputBase-input-MuiOutlinedInput-input {
+    font: inherit;
+    letter-spacing: inherit;
+    padding: 4px 0 5px;
+    border: 0;
+    box-sizing: content-box;
+    background: none;
+    height: 1.4375em;
+    margin: 0;
+    -webkit-tap-highlight-color: transparent;
+    display: block;
+    min-width: 0;
+    width: 100%;
+    -webkit-animation-name: mui-auto-fill-cancel;
+    animation-name: mui-auto-fill-cancel;
+    -webkit-animation-duration: 10ms;
+    animation-duration: 10ms;
+    padding: 16.5px 0px !important;
+}
+/* .css-9ddj71-MuiInputBase-root-MuiOutlinedInput-root{
+    font-family: "Roboto","Helvetica","Arial",sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+    letter-spacing: 0.00938em;
+    color: #6F7FAF !important;
+    box-sizing: border-box;
+    position: relative;
+    cursor: text;
+    display: inline-flex;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    position: relative;
+    background-color: #FFFFFF;
+} */
+.calculation {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 30px;
+    width: 622px;
+    height: 142px;
+    background-color: #F8F8F8;  
+    border-radius: 10px;
+    margin-top: 25px;
+}
+
+.profit {
+    display: flex;
+    flex-direction: row;
+}
+
+.sub-profit {
+    display: flex;
+    margin-left: 150px;
+    width: 245px;
+    height: 37px;
+    font-weight: bold;
+    line-height: 52px;
+    margin-top: 20px;
+    align-items: center;
+    text-align: right;
+    justify-content: flex-end;
+}
+/* .css-10botns-MuiInputBase-input-MuiFilledInput-input{
     font: inherit;
     letter-spacing: inherit;
     color: currentColor;
@@ -133,8 +254,9 @@
     width: 720px !important;
     height: 142px !important;
     margin-top: 25px;
-}
+} */
 
+/* button */
 .css-sghohy-MuiButtonBase-root-MuiButton-root {
     display: -webkit-inline-box;
     display: -webkit-inline-flex;
